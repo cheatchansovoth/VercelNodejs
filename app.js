@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get('/',(req,res)=>
 {
-    console.log('Hello world');
+    res.send('Hello world')
 })
 
 app.listen(process.env.PORT ||8080,(req,res)=>
