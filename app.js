@@ -6,7 +6,10 @@ app.use(express.json());
 
 app.get('/',(req,res)=>
 {
-    res.send('Hello world')
+    return res.status(200).json({
+        title: "Express Testing",
+        message: "The app is working properly!",
+      });
 })
 
 app.listen(process.env.PORT ||8080,(req,res)=>
